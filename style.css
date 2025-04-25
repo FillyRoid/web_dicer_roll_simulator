@@ -1,0 +1,557 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#score {
+    font-size: 30px;
+}
+
+
+.dices-field {
+    display: flex;
+    justify-content: center;
+}
+
+
+.dices {
+    width: 150px;
+    height: 150px;
+    border: 10px solid black;
+    border-radius: 25px;
+    margin: 0 10px;
+    position: relative;
+    background-color: bisque;
+}
+
+.dices:hover {
+    border: 11px solid rgb(56, 56, 56);
+}
+
+.dot_all {
+    position: absolute;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.dot1 {
+    left: 60px;
+    top: 60px;
+}
+
+.dot2 {
+    left: 60px;
+    top: 60px;
+}
+
+.dot3 {
+    left: 60px;
+    top: 60px;
+}
+
+.dot4 {
+    left: 60px;
+    top: 60px;
+}
+
+.dot5 {
+    left: 60px;
+    top: 60px;
+}
+
+.dot6 {
+    left: 60px;
+    top: 60px;
+}
+
+
+
+
+
+
+
+/* Animation frames */
+
+/* ############################################################ */
+/* 1. dot - 1. roll */
+@keyframes dot1_base_roll1 {
+    from {top: 60px; left: 60px; width: 30px; height: 30px; border-radius: 20px;}
+    to {top: 50px; left: 50px; width: 50px; height: 50px; border-radius: 30px;}
+}
+
+@keyframes dot1_roll1_base {
+    from {top: 50px; left: 50px; width: 50px; height: 50px; border-radius: 30px;}
+    to {top: 60px; left: 60px; width: 30px; height: 30px; border-radius: 20px;}
+}
+
+
+/* 1. dot - 2. roll */
+@keyframes dot1_base_roll2 {
+    from {top: 60px; left: 60px;}
+    to {top: 23px; left: 97px;}
+}
+
+@keyframes dot1_roll2_base {
+    from {top: 23px; left: 97px;}
+    to {top: 60px; left: 60px;}
+}
+
+
+/* 1. dot - 3. roll */
+@keyframes dot1_base_roll3 {
+    from {top: 60px; left: 60px;}
+    to {top: 23px; left: 97px;}
+}
+
+@keyframes dot1_roll3_base {
+    from {top: 23px; left: 97px;}
+    to {top: 60px; left: 60px;}
+}
+
+
+
+/* 1. dot - 4. roll */
+@keyframes dot1_base_roll4 {
+    from {top: 60px; left: 60px;}
+    to {top: 23px; left: 97px;}
+}
+
+@keyframes dot1_roll4_base {
+    from {top: 23px; left: 97px;}
+    to {top: 60px; left: 60px;}
+}
+
+
+
+/* 1. dot - 5. roll */
+@keyframes dot1_base_roll5 {
+    from {top: 60px; left: 60px;}
+    to {top: 23px; left: 97px;}
+}
+
+@keyframes dot1_roll5_base {
+    from {top: 23px; left: 97px;}
+    to {top: 60px; left: 60px;}
+}
+
+
+
+/* 1. dot - 6. roll */
+@keyframes dot1_base_roll6 {
+    from {top: 60px; left: 60px;}
+    to {top: 10px; left: 23px;}
+}
+
+@keyframes dot1_roll6_base {
+    from {top: 10px; left: 23px;}
+    to {top: 60px; left: 60px;}
+}
+
+
+
+/* ############################################################ */
+/* 2. dot - 1. roll */
+@keyframes dot2_base_roll1 {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+@keyframes dot2_roll1_base {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+
+/* 2. dot - 2. roll */
+@keyframes dot2_base_roll2 {
+    from {top: 60px; left: 60px;}
+    to {top: 97px; left: 23px;}
+}
+
+@keyframes dot2_roll2_base {
+    from {top: 97px; left: 23px;}
+    to {top: 60px; left: 60px;}
+}
+
+
+/* 2. dot - 3. roll */
+@keyframes dot2_base_roll3 {
+    from {top: 60px; left: 60px;}
+    to {top: 97px; left: 23px;}
+}
+
+@keyframes dot2_roll3_base {
+    from {top: 97px; left: 23px;}
+    to {top: 60px; left: 60px;}
+}
+
+
+
+/* 2. dot - 4. roll */
+@keyframes dot2_base_roll4 {
+    from {top: 60px; left: 60px;}
+    to {top: 97px; left: 23px;}
+}
+
+@keyframes dot2_roll4_base {
+    from {top: 97px; left: 23px;}
+    to {top: 60px; left: 60px;}
+}
+
+
+
+/* 2. dot - 5. roll */
+@keyframes dot2_base_roll5 {
+    from {top: 60px; left: 60px;}
+    to {top: 97px; left: 23px;}
+}
+
+@keyframes dot2_roll5_base {
+    from {top: 97px; left: 23px;}
+    to {top: 60px; left: 60px;}
+}
+
+
+
+/* 2. dot - 6. roll */
+@keyframes dot2_base_roll6 {
+    from {top: 60px; left: 60px;}
+    to {top: 10px; left: 97px;}
+}
+
+@keyframes dot2_roll6_base {
+    from {top: 10px; left: 97px;}
+    to {top: 60px; left: 60px;}
+}
+
+
+
+/* ############################################################ */
+/* 3. dot - 1. roll */
+@keyframes dot3_base_roll1 {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+@keyframes dot3_roll1_base {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+
+/* 3. dot - 2. roll */
+@keyframes dot3_base_roll2 {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+@keyframes dot3_roll2_base {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+
+/* 3. dot - 3. roll */
+@keyframes dot3_base_roll3 {
+    from {top: 60px; left: 60px;}
+    to {top: 60px; left: 60px;}
+}
+
+@keyframes dot3_roll3_base {
+    from {top: 60px; left: 60px;}
+    to {top: 60px; left: 60px;}
+}
+
+
+
+/* 3. dot - 4. roll */
+@keyframes dot3_base_roll4 {
+    from {top: 60px; left: 60px;}
+    to {top: 23px; left: 23px;}
+}
+
+@keyframes dot3_roll4_base {
+    from {top: 23px; left: 23px;}
+    to {top: 60px; left: 60px;}
+}
+
+
+
+/* 3. dot - 5. roll */
+@keyframes dot3_base_roll5 {
+    from {top: 60px; left: 60px;}
+    to {top: 23px; left: 23px;}
+}
+
+@keyframes dot3_roll5_base {
+    from {top: 23px; left: 23px;}
+    to {top: 60px; left: 60px;}
+}
+
+
+
+/* 3. dot - 6. roll */
+@keyframes dot3_base_roll6 {
+    from {top: 60px; left: 60px;}
+    to {top: 60px; left: 23px;}
+}
+
+@keyframes dot3_roll6_base {
+    from {top: 60px; left: 23px;}
+    to {top: 60px; left: 60px;}
+}
+
+
+
+/* ############################################################ */
+/* 4. dot - 1. roll */
+@keyframes dot4_base_roll1 {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+@keyframes dot4_roll1_base {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+
+/* 4. dot - 2. roll */
+@keyframes dot4_base_roll2 {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+@keyframes dot4_roll2_base {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+
+/* 4. dot - 3. roll */
+@keyframes dot4_base_roll3 {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+@keyframes dot4_roll3_base {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+
+
+/* 4. dot - 4. roll */
+@keyframes dot4_base_roll4 {
+    from {top: 60px; left: 60px;}
+    to {top: 97px; left: 97px;}
+}
+
+@keyframes dot4_roll4_base {
+    from {top: 97px; left: 97px;}
+    to {top: 60px; left: 60px;}
+}
+
+
+
+/* 4. dot - 5. roll */
+@keyframes dot4_base_roll5 {
+    from {top: 60px; left: 60px;}
+    to {top: 97px; left: 97px;}
+}
+
+@keyframes dot4_roll5_base {
+    from {top: 97px; left: 97px;}
+    to {top: 60px; left: 60px;}
+}
+
+
+
+/* 4. dot - 6. roll */
+@keyframes dot4_base_roll6 {
+    from {top: 60px; left: 60px;}
+    to {top: 60px; left: 97px;}
+}
+
+@keyframes dot4_roll6_base {
+    from {top: 60px; left: 97px;}
+    to {top: 60px; left: 60px;}
+}
+
+
+
+/* ############################################################ */
+/* 5. dot - 1. roll */
+@keyframes dot5_base_roll1 {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+@keyframes dot5_roll1_base {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+
+/* 5. dot - 2. roll */
+@keyframes dot5_base_roll2 {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+@keyframes dot5_roll2_base {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+
+/* 5. dot - 3. roll */
+@keyframes dot5_base_roll3 {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+@keyframes dot5_roll3_base {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+
+
+/* 5. dot - 4. roll */
+@keyframes dot5_base_roll4 {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+@keyframes dot5_roll4_base {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+
+
+/* 5. dot - 5. roll */
+@keyframes dot5_base_roll5 {
+    from {top: 60px; left: 60px;}
+    to {top: 60px; left: 60px;}
+}
+
+@keyframes dot5_roll5_base {
+    from {top: 60px; left: 60px;}
+    to {top: 60px; left: 60px;}
+}
+
+
+
+/* 5. dot - 6. roll */
+@keyframes dot5_base_roll6 {
+    from {top: 60px; left: 60px;}
+    to {top: 110px; left: 23px;}
+}
+
+@keyframes dot5_roll6_base {
+    from {top: 110px; left: 23px;}
+    to {top: 60px; left: 60px;}
+}
+
+
+
+/* ############################################################ */
+/* 6. dot - 1. roll */
+@keyframes dot6_base_roll1 {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+@keyframes dot6_roll1_base {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+
+/* 5. dot - 2. roll */
+@keyframes dot6_base_roll2 {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+@keyframes dot6_roll2_base {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+
+/* 5. dot - 3. roll */
+@keyframes dot6_base_roll3 {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+@keyframes dot6_roll3_base {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+
+
+/* 5. dot - 4. roll */
+@keyframes dot6_base_roll4 {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+@keyframes dot6_roll4_base {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+
+
+/* 5. dot - 5. roll */
+@keyframes dot6_base_roll5 {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+@keyframes dot6_roll5_base {
+    from {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+    to {top: 60px; left: 60px; background-color: rgba(0, 0, 0, 0);}
+}
+
+
+
+/* 6. dot - 6. roll */
+@keyframes dot6_base_roll6 {
+    from {top: 60px; left: 60px;}
+    to {top: 110px; left: 97px;}
+}
+
+@keyframes dot6_roll6_base {
+    from {top: 110px; left: 97px;}
+    to {top: 60px; left: 60px;}
+}
+
+
+
+/* ############################################################ */
+@keyframes dice_start_to_base {
+    from {background-color: bisque;}
+    to {background-color: rgb(132, 183, 224);}
+}
+
+@keyframes dice_to_base {
+    from {background-color: rgb(128, 160, 128);}
+    to {background-color: rgb(132, 183, 224);}
+}
+
+@keyframes dice_to_final {
+    from {background-color: rgb(132, 183, 224);}
+    to {background-color: rgb(128, 160, 128);}
+}
+
